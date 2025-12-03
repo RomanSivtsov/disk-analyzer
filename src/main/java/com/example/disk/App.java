@@ -14,6 +14,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ * Главный класс приложения.
+ * Выполняет оркестрацию: определяет ОС, запускает команды, фильтрует данные и формирует JSON-отчет.
+ */
 public class App {
     public static void main(String[] args) {
         try {
