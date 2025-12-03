@@ -29,7 +29,7 @@ public class App {
 
             if (os.contains("win")) {
                 parser = new WindowsDiskParser();
-                command = "wmic logicaldisk get Caption,FreeSpace,Size";
+                command = "powershell -Command \"Get-CimInstance -ClassName Win32_LogicalDisk | Select-Object DeviceID,FreeSpace,Size | Format-Table -HideTableHeaders\"";
             } else {
                 parser = new LinuxDiskParser();
                 command = "df -P -k";
