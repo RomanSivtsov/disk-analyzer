@@ -41,3 +41,15 @@ chmod +x gradlew
 ```Bash
 java -jar build/libs/disk-analyzer-1.0.0.jar
 ```
+
+## ⚙️ Настройки
+
+Если нужно изменить порог срабатывания (по умолчанию 90%), отредактируйте файл:
+src/main/resources/app.properties
+
+```Properties
+usage.threshold.percent=90
+output.units=GB
+```
+
+После изменения файла нужно снова выполнить команду ./gradlew build.
