@@ -9,3 +9,29 @@
 Проверить свою версию:
 ```bash
 java -version
+```
+
+## 🚀 Пошаговая инструкция по запуску
+
+1. Скачать проект
+Откройте терминал (PowerShell или CMD) и введите:
+code
+Bash
+git clone https://github.com/RomanSivtsov/disk-analyzer.git
+cd disk-analyzer
+2. Собрать проект
+Эта команда сама скачает нужные библиотеки и создаст файл программы.
+Windows:
+code
+Powershell
+./gradlew build
+Linux / macOS:
+code
+Bash
+chmod +x gradlew
+./gradlew build
+Дождитесь сообщения BUILD SUCCESSFUL.
+3. Запустить
+code
+Bash
+java -jar build/libs/disk-analyzer-1.0.0.jar
