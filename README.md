@@ -24,17 +24,20 @@ cd disk-analyzer
 ### 2. Собрать проект
 Эта команда сама скачает нужные библиотеки и создаст файл программы.
 Windows:
-
 ```Powershell
 ./gradlew build
 ```
+
 Linux / macOS:
-code
-Bash
+```Bash
 chmod +x gradlew
 ./gradlew build
+```
+
 Дождитесь сообщения BUILD SUCCESSFUL.
-3. Запустить
-code
-Bash
+
+###3. Запустить
+
+```Bash
 java -jar build/libs/disk-analyzer-1.0.0.jar
+```
