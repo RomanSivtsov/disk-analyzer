@@ -36,7 +36,7 @@ chmod +x gradlew
 
 Дождитесь сообщения BUILD SUCCESSFUL.
 
-###3. Запустить
+### 3. Запустить
 
 ```Bash
 java -jar build/libs/disk-analyzer-1.0.0.jar
